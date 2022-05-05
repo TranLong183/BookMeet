@@ -1,0 +1,134 @@
+
+body{
+    background-color: #61D0EE;
+}
+.wrapper{
+    width: 700px;
+    min-height: 80vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.content{
+    display: flex;
+}
+.wrapper .title{ 
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0px;
+  }
+span{
+    color: red;
+}
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .repeat .date .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+form .input-box label.details{
+    display: block;
+    margin-bottom: 5px;
+}
+.user-details .input-box select{
+    height: 30px;
+    width: 330px;
+    outline: none;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+}
+form .input-box1 label.details1{
+    display: block;
+    margin-bottom: 5px; 
+}
+form .input-box2 label.details2{
+    display: block;
+    margin-bottom: 5px;
+}
+.user-details .input-box1 input{
+    height: 30px;
+    width: 680px;
+    outline: none;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    /* margin-bottom: 20px; */
+}
+.user-details .input-box2 input{
+    height: 18px;
+    width: 155px;
+    outline: none;
+    padding-bottom: 10px;
+    margin-right: 170px;
+    border: 1px solid #ccc;
+}
+.user-details .input-box2 select{
+    height: 33px;
+    width: 142px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.repeat-event {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.repeat .weekly input{
+    margin-left: 20px;
+}
+.weekly{
+    /* margin-bottom: 20px; */
+    display: flex;
+}
+form input[type="radio"]{
+    display: none;
+}
+.repeat .input-box input{
+    height: 30px;
+    width: 325px;
+    outline: none;
+    padding-left: 0px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    
+}
+.content form .repeat .date {
+    display: flex;
+    padding-left: 0px;
+}
+#date2{
+    margin-left: 40px;
+}
+form .button{
+    height: 60px;
+    margin: 35px 0;
+    margin-left:570px ;
+}
+form .button button{
+    height: 40px;
+    width: 60px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #49535F;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+p{
+    color: red;
+    font-size: 12px;
+    padding-left: 20px;
+
+}

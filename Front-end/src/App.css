@@ -1,0 +1,18 @@
+.app-container {
+  width: 100%;
+  
+}
+body{
+  overflow: hidden;
+}
+.MuiContainer-root.MuiContainer-maxWidthLg {
+  max-width: 1600px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ac97b7;
+}

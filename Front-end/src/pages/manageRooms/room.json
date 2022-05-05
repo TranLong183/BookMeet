@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "name1",
+		"size": "5",
+		"color": "blue",
+		"peripheral": "true",
+		"roomVip": "true"
+	},
+	{
+		"id": 2,
+		"name": "name2",
+		"size": "5",
+		"color": "red",
+		"peripheral": "true",
+		"roomVip": "true"
+	},
+	{
+		"id": 3,
+		"name": "name3",
+		"size": "5",
+		"color": "pink",
+		"peripheral": "true",
+		"roomVip": "false"
+	},
+	{
+		"id": 4,
+		"name": "name4",
+		"size": "5",
+		"color": "green",
+		"peripheral": "true",
+		"roomVip": "true"
+	},
+	{
+		"id": 5,
+		"name": "name5",
+		"size": "5",
+		"color": "yellow",
+		"peripheral": "true",
+		"roomVip": "false"
+	}
+]

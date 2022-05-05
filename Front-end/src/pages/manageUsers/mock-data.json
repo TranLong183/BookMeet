@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "fullname": "Jenny Chan",
+    "email": "jenny.chan@email.com",
+    "group": "BGD",
+    "adminRole": false,
+    "authRoomVip": false
+  },
+  {
+    "id": 2,
+    "fullname": "Jessica warren",
+    "email": "jessica.warren@email.com",
+    "group": "",
+    "adminRole": false,
+    "authRoomVip": true
+  },
+  {
+    "id": 3,
+    "fullname": "Tony Frank",
+    "email": "tony.frank@email.com",
+    "group": "Tester",
+    "adminRole": true,
+    "authRoomVip": true
+  },
+  {
+    "id": 4,
+    "fullname": "Jeremy Clark",
+    "email": "jeremy.clark@email.com",
+    "group": "Mobile",
+    "adminRole": true,
+    "authRoomVip": false
+  },
+  {
+    "id": 5,
+    "fullname": "Raymond Edwards",
+    "email": "raymon.edwards@email.com",
+    "group": "",
+    "adminRole": false,
+    "authRoomVip": false
+  }
+]

@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  background: rgb(244, 113, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 113, 33, 1) 0%,
+    rgba(27, 76, 162, 1) 100%,
+    rgba(15, 49, 107, 1) 100%
+  );
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #0c162d inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.text-animate {
+  position: relative;
+}
+/* .text-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.5px;
+  height: 100%;
+  background: black;
+  animation: blinkCursor 1s infinite;
+} */
+/* @keyframes blinkCursor {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+} */
+.heading {
+  position: relative;
+  animation: typing1 0.8s steps(20);
+  overflow: hidden;
+}
+.slogan {
+  position: relative;
+  animation: typing2 0.9s steps(25);
+  overflow: hidden;
+}
+@keyframes typing1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 224.66px;
+  }
+}
+@keyframes typing2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 224.66px;
+  }
+}
