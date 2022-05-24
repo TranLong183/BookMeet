@@ -2,6 +2,7 @@
   "name": "react-router-6-demo",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://13.57.33.191/api/v1/",
   "dependencies": {
     "@date-io/date-fns": "^2.13.1",
     "@date-io/dayjs": "^2.13.1",
