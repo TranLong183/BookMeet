@@ -1,4 +1,4 @@
-const baseURL = 'http://13.57.33.191/api/v1/'
+const baseURL = 'https://2d6c-54-67-93-27.ngrok.io/api/v1/'
 export const postDataApi = async (url, data, token) => {
 	return token
 		? await fetch(`${baseURL}${url}`, {
@@ -35,7 +35,7 @@ export const getDataApi = async (url, token) => {
 }
 
 export const getBookingDataApi = async (time, token) => {
-	return await fetch(`${baseURL}/booking/in_time/`, {
+	return await fetch(`${baseURL}booking/in_time/`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ export const getBookingDataApi = async (time, token) => {
 }
 
 export const getListRoomApi = async (token) => {
-	return await fetch(`${baseURL}/room/`, {
+	return await fetch(`${baseURL}room/`, {
 		method: 'GET',
 		headers: {
 			'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ export const getListRoomApi = async (token) => {
 }
 
 export const getListGroupApi = async (token) => {
-	return await fetch(`${baseURL}/groups/listgroup/`, {
+	return await fetch(`${baseURL}groups/listgroup/`, {
 		method: 'GET',
 		headers: {
 			'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export const getListGroupApi = async (token) => {
 }
 
 export const addEvent = async (data, token) => {
-	return await fetch(`${baseURL}/add-event/`, {
+	return await fetch(`${baseURL}add-event/`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ export const addEvent = async (data, token) => {
 }
 
 export const editRepeatFalseEvent = async (token, data, id) => {
-	return await fetch(`${baseURL}/booking/update-booking/${id}`, {
+	return await fetch(`${baseURL}booking/update-booking/${id}`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ export const editRepeatFalseEvent = async (token, data, id) => {
 }
 
 export const editRepeatTrueEvent = async (token, data, group_id) => {
-	return await fetch(`${baseURL}/events/update-event/${group_id}`, {
+	return await fetch(`${baseURL}events/update-event/${group_id}`, {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ export const editRepeatTrueEvent = async (token, data, group_id) => {
 }
 
 export const searchEvent = async (data, token) => {
-	return await fetch(`${baseURL}/events/Searchevent/`, {
+	return await fetch(`${baseURL}events/Searchevent/`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ export const searchEvent = async (data, token) => {
 }
 
 export const searchEmptyRoom = async (data, token) => {
-	return await fetch(`${baseURL}/booking/empty_room/`, {
+	return await fetch(`${baseURL}booking/empty_room/`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ export const searchEmptyRoom = async (data, token) => {
 }
 
 export const searchRoom = async (data, token) => {
-	return await fetch(`${baseURL}/room/search_event_room`, {
+	return await fetch(`${baseURL}room/search_event_room`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -132,7 +132,7 @@ export const searchRoom = async (data, token) => {
 }
 
 export const deleteEvent = async (data, token) => {
-	return await fetch(`${baseURL}/booking/delete_booking/`, {
+	return await fetch(`${baseURL}booking/delete_booking/`, {
 		method: 'DELETE',
 		headers: {
 			'Content-Type': 'application/json',
@@ -143,7 +143,7 @@ export const deleteEvent = async (data, token) => {
 }
 
 export async function deleteEventAPI(token, id) {
-	return await fetch(`${baseURL}/events/delete/${id}`, {
+	return await fetch(`${baseURL}events/delete/${id}`, {
 		headers: {
 			'Content-Type': 'application/json',
 			Authorization: `Bearer ${token}`,
@@ -163,7 +163,7 @@ export const putDataApi = async (url, data, token) => {
 }
 
 export async function postRoomApi(url, token, data) {
-	return await fetch(`${baseURL}/room/${url}/`, {
+	return await fetch(`${baseURL}room/${url}/`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ export async function postRoomApi(url, token, data) {
 }
 
 export async function putRoomApi(id, token, data) {
-	return await fetch(`${baseURL}/room/edit_room/${id}`, {
+	return await fetch(`${baseURL}room/edit_room/${id}`, {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json',
@@ -185,7 +185,7 @@ export async function putRoomApi(id, token, data) {
 }
 
 export const deleteManyEvent = async (data, token) => {
-	return await fetch(`${baseURL}/booking/delete_many_booking/`, {
+	return await fetch(`${baseURL}booking/delete_many_booking/`, {
 		method: 'DELETE',
 		headers: {
 			'Content-Type': 'application/json',
