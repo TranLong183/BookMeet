@@ -1,4 +1,4 @@
-const baseURL = 'https://f5ee-54-67-93-27.ngrok.io/api/v1/'
+const baseURL = 'http://127.0.0.1:8000/'
 export const postDataApi = async (url, data, token) => {
 	return token
 		? await fetch(`${baseURL}${url}`, {
