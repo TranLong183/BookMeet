@@ -1,4 +1,4 @@
-const baseURL = 'http://127.0.0.1:8000/'
+const baseURL = 'http://127.0.0.1:8000/api/v1/'
 export const postDataApi = async (url, data, token) => {
 	return token
 		? await fetch(`${baseURL}${url}`, {
